@@ -52,3 +52,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- vim: ts=2 sts=2 sw=2 et
+
+-- [[ Neo-tree keymaps ]]
+--  See `:help neo-tree`
+
+-- Toggle Neo-tree (left file explorer)
+vim.keymap.set('n', '<leader>e', '<cmd>Neotree toggle<CR>', { desc = 'Toggle [E]xplorer (Neo-tree)' })
+
+-- Reveal current file in Neo-tree
+vim.keymap.set('n', '<leader>o', '<cmd>Neotree reveal<CR>', { desc = '[O]pen Neo-tree to current file' })
+
+-- Focus Neo-tree (without toggling visibility)
+vim.keymap.set('n', '<leader>f', '<cmd>Neotree focus<CR>', { desc = '[F]ocus Neo-tree window' })
